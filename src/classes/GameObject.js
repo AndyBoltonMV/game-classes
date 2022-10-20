@@ -12,7 +12,7 @@ class GameObject {
   }
   /**
    * Get the location coordinates
-   * @return {number[]} The location coordinates
+   * @return {Array.<number, number>} The location coordinates
    */
   get location() {
     return this.location;
