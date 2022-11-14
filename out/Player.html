@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: GameObject</title>
+    <title>JSDoc: Class: Player</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: GameObject</h1>
+    <h1 class="page-title">Class: Player</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>GameObject<span class="signature">(config)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Player<span class="signature">(config)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">- Represents a Game Object.</div>
+            <div class="class-description">- The Player class</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="GameObject"><span class="type-signature"></span>new GameObject<span class="signature">(config)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Player"><span class="type-signature"></span>new Player<span class="signature">(config)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Create a Game Object.
+    Create a Player Object.
 </div>
 
 
@@ -105,7 +105,7 @@
 
             
 
-            <td class="description last">Configuration values for class
+            <td class="description last">Configuration values for the class
                 <h6>Properties</h6>
                 
 
@@ -131,36 +131,13 @@
 
         <tr>
             
-                <td class="name"><code>src</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Image source</td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>location</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number, number></span>
+<span class="param-type">Array.&lt;Number, Number></span>
 
 
             
@@ -170,7 +147,53 @@
 
             
 
-            <td class="description last">Array containing x & y coordinates</td>
+            <td class="description last">Array containing x & y coords</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>inventory</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Object containing items in players inventory</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Image source for animation</td>
         </tr>
 
     
@@ -218,7 +241,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="GameObject.js.html">GameObject.js</a>, <a href="GameObject.js.html#line2">line 2</a>
+        <a href="Player.js.html">Player.js</a>, <a href="Player.js.html#line2">line 2</a>
     </li></ul></dd>
     
 
@@ -264,19 +287,78 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         
             
-<h4 class="name" id="location"><span class="type-signature"></span>location<span class="type-signature"></span></h4>
+
+    
+
+    
+    <h4 class="name" id="changeImage"><span class="type-signature"></span>changeImage<span class="signature">(src)</span><span class="type-signature"></span></h4>
+    
+
+    
 
 
 
 
-<div class="description">
-    Get the location coordinates
-</div>
 
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">New image source for animation</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -312,7 +394,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="GameObject.js.html">GameObject.js</a>, <a href="GameObject.js.html#line17">line 17</a>
+        <a href="Player.js.html">Player.js</a>, <a href="Player.js.html#line19">line 19</a>
     </li></ul></dd>
     
 
@@ -328,16 +410,6 @@
 
 
 
-        
-            
-<h4 class="name" id="location"><span class="type-signature"></span>location<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Update the location coordinates
-</div>
 
 
 
@@ -345,45 +417,7 @@
 
 
 
-<dl class="details">
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="GameObject.js.html">GameObject.js</a>, <a href="GameObject.js.html#line24">line 24</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
 
 
 
@@ -391,8 +425,6 @@
 
 
         
-    
-
     
 
     
@@ -408,13 +440,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="GameObject.html">GameObject</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Player.html">Player</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Mon Nov 14 2022 11:44:16 GMT+0000 (Greenwich Mean Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Mon Nov 14 2022 11:59:37 GMT+0000 (Greenwich Mean Time)
 </footer>
 
 <script> prettyPrint(); </script>
